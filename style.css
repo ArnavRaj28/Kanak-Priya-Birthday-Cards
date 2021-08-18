@@ -1,0 +1,86 @@
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  background: blue;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.card {
+  background: white;   
+  border-radius: 30px;
+  height: 85vh;
+  width: 80vw;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
+}
+.card1 {
+  transition: 5s linear;
+}
+.card1:hover {
+  transform: rotate(360deg);
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+
+img.birthday {
+  max-height: 40vh;
+  border-radius: 30px;
+  transform: rotate(360deg);
+}
+
+.text {
+  padding: 1em;
+  color: black;
+}
+.text h1 {
+  color: red;
+}
+
+.text h1:hover {
+  color: black;
+}
+.muted {
+  opacity: 10;
+  color: blue;
+  transition: 3s linear
+}
+
+.muted:hover {
+  transform: rotateY(180deg);
+}
+
+.text p:hover {
+  color: rgb(80, 247, 80);
+}

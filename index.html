@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+  <title>Happy Birthday</title>
+</head>
+
+<body>
+
+
+  <div class="card">
+    <div class="card1">
+      <img src=" images/kanak1.jpg" alt="birthday" class="birthday">
+
+    </div>
+
+    <audio controls autoplay>
+      <source src="Audio/Kanak.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="text">
+      <h1>Happy Birthday My Dear!</h1>
+      <p >“May this day bring a lot of smiles and happiness to you, my dear friend. Wishing you a great and grand Happy
+        Birthday!”</p>
+      <p class="muted">- Kanak Priya (Bulbul)</p> 
+    </div>
+
+  </div>
+
+
+  <script src="Animation/confetti.js"></script>
+
+
+  <!-- Confetti  JS-->
+  <script>
+
+    // start
+
+    const start = () => {
+      setTimeout(function () {
+        console.log("start");
+        confetti.start();
+      }, 1000);    // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+    };
+
+
+
+    //  Stop
+
+    const stop = () => {
+      setTimeout(function () {
+        console.log("stop");
+        confetti.stop();
+      }, 7000); // 7000 is time that after 5 second stop the confetti ( 7000 = 7 sec)
+    };
+
+    start();
+    stop()
+  </script>
+
+</body>
+
+</html>
